@@ -57,9 +57,9 @@ Material:
     - Speed1: 5
     - Speed2: 3
     - Speed3: 2
-    - Steepness1: 0.18
+    - Steepness1: 0.06
     - Steepness2: 0.1
-    - Steepness3: 0.5
+    - Steepness3: 0.1
     - Vector1_1b96df55d77f4091a34b4fb8712944af: 0.25
     - Vector1_457cbbc0012b406f956a19c4a875b493: 1.5
     - Vector1_605bc7ab2363440f83c9fbae52d4aea1: 21
@@ -73,7 +73,7 @@ Material:
     - Vector1_e1757747c878454199f9aab30c9378de: 0.5
     - Vector1_e37b232bb65a4234a20ce81aad16f8de: 62.92
     - Vector1_ece06494555e4843962f6e2dedbc7b32: 15
-    - Wavelength1: 11.48
+    - Wavelength1: 28.63
     - Wavelength2: 10
     - Wavelength3: 20
     - _AddPrecomputedVelocity: 0
@@ -132,8 +132,8 @@ Material:
         a: 0}
     - Color_b42c24a8dd3541eeadcbc94ec7fe3078: {r: 0, g: 0.3703627, b: 0.5660378, a: 0}
     - Direction1: {r: 1, g: 0, b: 0, a: 0}
-    - Direction2: {r: 0.32, g: 1.55, b: 0, a: 0}
-    - Direction3: {r: 1.34, g: 0.65, b: 0, a: 0}
+    - Direction2: {r: 1.71, g: 0.5, b: 0, a: 0}
+    - Direction3: {r: 0.58, g: 0.65, b: 0, a: 0}
     - Vector2_1f764ce95137496da8fe63141945131b: {r: 1, g: 1.3, b: 0, a: 0}
     - Vector2_dc0bef4524f14d288ae7849a076b24a6: {r: 1, g: 0.6, b: 0, a: 0}
     - Vector2_e29036418c134ba0b376eb9a51bb670a: {r: 1, g: 1, b: 0, a: 0}

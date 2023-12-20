@@ -14,6 +14,7 @@ public class BoatController : MonoBehaviour
     [SerializeField] private float turningTorque = 50f;
     [SerializeField] private float sailForce = 5f;
     [SerializeField] private float sailRotationSpeed = 50f;
+    [SerializeField] private float maxSailRotation = 45f;
     private bool isAnchored = false;
     [SerializeField] private Transform sailTransform;
 
@@ -114,8 +115,17 @@ public class BoatController : MonoBehaviour
     void RotateSail(int direction)
     {
         // Rotate the sail in the specified direction
-        sailTransform.Rotate(Vector3.up, direction * sailRotationSpeed * Time.deltaTime);
+        float newRotation = sailTransform.localEulerAngles.y + direction * sailRotationSpeed * Time.deltaTime;
+
+        // Convert to the range [-180, 180)
+        newRotation = ((newRotation + 180f) % 360f + 360f) % 360f - 180f;
+
+        // Clamp the rotation to the specified range
+        newRotation = Mathf.Clamp(newRotation, -maxSailRotation, maxSailRotation);
+
+        sailTransform.localEulerAngles = new Vector3(0, newRotation, 0);
     }
+
     void UpdateForce()
     {
         // Optionally, you can use this method to perform additional logic related to force updates
